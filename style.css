@@ -1,0 +1,413 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+#about-para p{
+
+color: gray;
+}
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+section
+{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:wrap;
+}
+section:nth-child(2n)
+{
+    background-color:#EFEFEF;
+}
+section:nth-child(2n+1)
+{
+    background-color:white;
+}
+.section-heading
+{
+    width:auto;
+    padding:20px 10px 10px;
+    margin:30px auto;
+    font-weight:400;
+}
+
+/* Skill Section */
+
+.section-heading span
+{
+    font-size:40px;
+    color:#2857a4;
+    display:inline-block;
+    padding-top:10px;
+    margin-right:0.5rem;
+    margin-bottom:10px;
+    
+}	
+/* .mb75px
+{
+    margin-bottom:75px;
+} */
+.skill-display
+{
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+	justify-content:space-between;
+    margin-bottom:40px;
+    
+    
+}
+.skill-progress
+{
+    width:15rem;
+    background-color:lightgrey;
+    border-radius:30px;
+    margin:20px;
+    
+    
+}
+.skill-progress span
+{
+    color:white;
+    margin-left:10px;
+    font-size:1rem;
+    margin:10px;
+}
+.skill-progress div
+{
+    height:40px;
+    border-radius:30px 0px 0px 30px;
+    
+}
+#java{
+    width:50%;
+    background-color:#2857A4;
+    box-shadow: 3px 0px #AFAFA2;
+}
+#HTML{
+    width:70%;
+    background-color:#EC4D1C;
+    box-shadow: 3px 0px #AFAFA2;
+}
+#CSS{
+    width:50%;
+    background-color:#93738C;
+    box-shadow: 3px 0px #AFAFA2;
+}
+#Node{
+    width:80%;
+    background-color:#2857A4;
+    box-shadow: 3px 0px #AFAFA2;
+}
+#MongoDB{
+    width:80%;
+    background-color:#93738C;
+    box-shadow: 3px 0px #AFAFA2;
+}
+#Javascript{
+    width:80%;
+    background-color:#0B8176;
+    box-shadow: 3px 0px #AFAFA2;
+}
+#React{
+    width:70%;
+    background-color:#61DAFB;
+    box-shadow: 3px 0px #AFAFA2;
+}
+/* Portfolio-section*/
+.img-container
+{
+    width:80%;
+}
+.img-container img
+{
+    border: solid black ;
+    width:55rem;
+    margin:2rem;
+    display:inline-block;
+    justify-content:space-between;    
+}
+
+/* Contact Section */
+#contact
+{
+    background:linear-gradient(90deg,#2B519B,#403066);
+}
+#contact h1
+{
+    color:white;
+}
+#contact-container
+{
+    display:flex;
+    padding:0.5rem;
+}
+#contact-form
+{
+    display:flex;
+    flex-direction:column;
+    width:55%;
+}
+#my-details
+{
+    display:flex;
+    flex-direction:column;
+    width:45%;
+}
+#name,#email,#message,#button
+{
+	
+    background-color:rgba(0,0,0,0);
+    border-bottom:2px solid white;
+    border-top:5px solid rgba(0,0,0,0);
+    border-left:5px solid rgba(0,0,0,0);
+    border-right:5px solid rgba(0,0,0,0);
+    margin:1rem;
+    margin-left:3rem;
+    width:60%;
+    height:3rem;
+    padding:1%;
+    align-self:center;
+}
+#button
+{
+    color:white;
+    border:3px solid white;
+    width:35%;
+    margin-top:2rem;
+    
+}
+#my-details span 
+{
+    color:white;
+    font-size:1.2rem;
+}
+.contact-heading span
+{
+    color:white;
+/*     font-size:1.2rem; */
+}
+
+#my-details p 
+{
+    color:white;
+    font-size:1.2rem;
+}
+#my-details i
+{
+    color:white;
+    font-size:1.2rem;
+}
+#my-details h4 
+{
+    color:white;
+    font-size:1.2rem;
+}
+
+/*Wrok experience  */
+.timeline
+{
+    position:relative;
+    width:75%;
+/*     border:1px solid black; */
+}
+.timeline-box
+{
+    position:relative;
+    width:40%;
+    margin:4px;
+    min-height:150px;
+/*     border:1px solid black; */
+    display:flex;
+    flex-direction:column;
+    
+}
+.timeline-box:nth-child(2n)
+{
+    left:55%;
+}
+.timeline-divider
+{
+    position:absolute;
+    top:5%;
+    left:50%;
+    width:0px;
+    height:80%;
+    border:3px dashed #94D3FD;
+    color:#2857A4;
+}
+.timeline-traveller
+{
+    position:sticky;
+    top:1px;
+    transform: rotate(90deg);
+}
+.timeline-box:nth-child(2n+1)::after
+{
+    content:"";
+    position:absolute;
+    top:25%;
+    right:-26%;
+    border-radius:50%;
+    width:0.8rem;
+    height:0.8rem;
+    background-color:#D3D3D3;
+}
+.timeline-box:nth-child(2n)::after
+{
+    content:"";
+    position:absolute;
+    top:25%;
+    left:-15%;
+    border-radius:50%;
+    width:0.8rem;
+    height:0.8rem;
+    background-color:#D3D3D3;
+}
+.designation,.company-name,.duration
+{
+ align-self:end;
+}
+.organisation-icon
+{
+    position:absolute;
+}
+.duration
+{
+    font-size:1.2rem;
+    color:#808080;
+}
+.company-name
+{
+    color:#EB822D;
+    font-size:1.3rem;
+    font-weight:350;
+}
+.designation
+{
+    color:#2857A4;
+    font-weight:450;
+    font-size:2rem;
+}
+.summary
+{
+    font-size:1rem;
+    color:#808080;
+    align-self:end;
+}
+
+
