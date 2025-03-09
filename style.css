@@ -261,6 +261,7 @@ section:nth-child(2n+1)
     display:flex;
     flex-direction:column;
     width:55%;
+    
 }
 #my-details
 {
@@ -282,6 +283,7 @@ section:nth-child(2n+1)
     height:3rem;
     padding:1%;
     align-self:center;
+    color: white;
 }
 #button
 {

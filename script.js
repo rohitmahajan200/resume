@@ -1,9 +1,12 @@
 import express from 'express'
 import nodemailer from "nodemailer";
 import { urlencoded } from 'express';
-
+import cors from "cors"
+import dotenv from 'dotenv';
 const server=express();
 
+dotenv.config()
+server.use(cors());
 server.use(urlencoded({extended:true}));
 server.use(express.json());
 
@@ -24,8 +27,8 @@ const initiateMail=async(name,mail,message)=>{
     const transporter=nodemailer.createTransport({
         service:"gmail",
         auth:{
-            user:'mrdevrm@gmail.com',
-            pass:'fmdw neat ehuc bnyb'
+            user:process.env.USER_ID,
+            pass:process.env.PASSKEY
         }
     })
 
@@ -33,7 +36,8 @@ const initiateMail=async(name,mail,message)=>{
         from:'mrdevrm@gmail.com',
         to:'rm90087@gmail.com',
         subject:`Hello Rohit You Have Message From, ${name}`,
-        text:`Message is- ${message}. Sender Mail ID is- ${mail}`,
+        text:`Message is- ${message},
+        Sender Mail ID is- ${mail}`,
     }
 
     try {
