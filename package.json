@@ -4,11 +4,12 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"npm i",
     "start": "node script.js"
   },
   "keywords": [],
   "type": "module",
-  "author": "",
+  "author": "Rohit Mahajan",
   "license": "ISC",
   "description": "",
   "dependencies": {
